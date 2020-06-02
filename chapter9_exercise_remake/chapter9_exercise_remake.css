@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.containts {
+  position: relative;
+  border: 1px solid #c0c0c0;
+  float: left;
+  width: 300px;
+  margin: 50px 0;
+}
+
+.containts:nth-child(2) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.image {
+  width: 280px;
+  height: 160px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.step {
+  position: absolute;
+  background-color: orange;
+  color: white;
+  display: inline-block;
+}
+
+h3,
+p {
+  margin: 0 10px;
+  padding: 3px;
+}
+
+h3 {
+  color: black;
+}

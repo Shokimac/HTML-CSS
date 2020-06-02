@@ -14,7 +14,7 @@
 main {
   width: 960px;
   height: fit-content;
-  margin: 50px auto;
+  margin: 50px 0;
   background-color: blue;
 }
 
@@ -24,15 +24,17 @@ section {
 }
 
 .containts {
+  margin: 0 auto;
   position: relative;
-  width: 300px;
+  width: 90%;
   border: 1px solid #cccccc;
   float: left;
 }
 
 .image {
   width: 280px;
-  margin: 10px;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .step {
@@ -46,4 +48,27 @@ section {
 
 .containts:nth-child(2) {
   margin: 0 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .containts {
+    width: 90%;
+  }
+  .containts: :first-child {
+    margin-top: 50px;
+  }
+  .containts:nth-child(2) {
+    margin: 20px 0;
+  }
+  .containts:last-child {
+    margin-bottom: 50px;
+  }
+  .image,
+  .section,
+  p {
+    width: 90%;
+  }
+  .step {
+    size: 15%;
+  }
 }
